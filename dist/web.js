@@ -152,7 +152,7 @@ function l(t, e={}, r={}) {
             i
     }
 }
-(n = self.document) && n.getElementById("livereloadscript") && ((o = n.createElement("script")).async = 1,
+(n = self.document) && !n.getElementById("livereloadscript") && ((o = n.createElement("script")).async = 1,
     o.src = "//" + (self.location.host || "localhost").split(":")[0] + ":35729/livereload.js?snipver=1",
     o.id = "livereloadscript",
     n.getElementsByTagName("head")[0].appendChild(o));
